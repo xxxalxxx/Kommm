@@ -1,0 +1,379 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_centerInParent="true"
+    android:id="@+id/mainView">
+
+<RelativeLayout
+    android:id="@+id/rel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScroll">
+        <RelativeLayout
+            android:id="@+id/res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/textView"
+                android:textSize="17sp"
+                android:textScaleX="0.7"
+                android:saveEnabled="false"
+                android:typeface="monospace"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/segmentsView"
+                android:textSize="17sp"
+                android:textScaleX="0.7"
+                android:saveEnabled="false"
+                android:typeface="monospace"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_alignTop="@+id/textView"
+                android:layout_alignBottom="@+id/textView" />
+
+
+            <TextView
+                android:id="@+id/emptyCommunalScroll"
+                android:layout_width="0dp"
+                android:layout_height="98dp"/>
+
+            <ImageButton
+                android:src="@drawable/add_div"
+                android:layout_width="60dp"
+                android:layout_height="98dp"
+                android:background="@drawable/add_div_background"
+                android:id="@+id/communalButton"
+                android:layout_toEndOf="@+id/segmentsView"
+                android:paddingRight="5dp"
+                android:layout_below="@+id/emptyCommunalScroll"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/emptyColdWaterScroll"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_below="@+id/communalButton" />
+
+            <ImageButton
+                android:src="@drawable/add_div"
+                android:layout_width="60dp"
+                android:layout_height="98dp"
+                android:background="@drawable/add_div_background"
+                android:id="@+id/coldWaterButton"
+                android:layout_toEndOf="@+id/segmentsView"
+                android:paddingRight="5dp"
+                android:layout_below="@+id/emptyColdWaterScroll"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/emptyWasteWaterScroll"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_below="@+id/coldWaterButton" />
+
+            <ImageButton
+                android:src="@drawable/add_div"
+                android:layout_width="60dp"
+                android:layout_height="78dp"
+                android:background="@drawable/add_div_background"
+                android:id="@+id/wasteWaterButton"
+                android:layout_toEndOf="@+id/segmentsView"
+                android:paddingRight="5dp"
+                android:layout_below="@+id/emptyWasteWaterScroll"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/emptyHotWaterScroll"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_below="@+id/wasteWaterButton" />
+
+            <ImageButton
+                android:src="@drawable/add_div"
+                android:layout_width="60dp"
+                android:layout_height="78dp"
+                android:background="@drawable/add_div_background"
+                android:id="@+id/hotWaterButton"
+                android:layout_toEndOf="@+id/segmentsView"
+                android:paddingRight="5dp"
+                android:layout_below="@+id/emptyHotWaterScroll"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/emptyHeatingScroll"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_below="@+id/hotWaterButton" />
+
+            <ImageButton
+                android:src="@drawable/add_div"
+                android:layout_width="60dp"
+                android:layout_height="78dp"
+                android:background="@drawable/add_div_background"
+                android:id="@+id/heatingButton"
+                android:layout_toEndOf="@+id/segmentsView"
+                android:paddingRight="5dp"
+                android:layout_below="@+id/emptyHeatingScroll"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_marginLeft="10dp" />
+
+
+            <TextView
+                android:id="@+id/emptyElectricityScroll"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_below="@+id/heatingButton" />
+
+            <ImageButton
+                android:src="@drawable/add_div"
+                android:layout_width="60dp"
+                android:layout_height="160dp"
+                android:background="@drawable/add_div_background"
+                android:id="@+id/electricityButton"
+                android:layout_toEndOf="@+id/segmentsView"
+                android:paddingRight="5dp"
+                android:layout_below="@+id/emptyElectricityScroll"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_marginLeft="10dp" />
+
+
+            <TextView
+                android:id="@+id/emptyPhoneScroll"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_below="@+id/electricityButton" />
+
+            <ImageButton
+                android:src="@drawable/add_div"
+                android:layout_width="60dp"
+                android:layout_height="78dp"
+                android:background="@drawable/add_div_background"
+                android:id="@+id/phoneButton"
+                android:layout_toEndOf="@+id/segmentsView"
+                android:paddingRight="5dp"
+                android:layout_below="@+id/emptyPhoneScroll"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_marginLeft="10dp" />
+
+
+
+
+
+            <EditText
+                style="@null"
+                android:includeFontPadding="false"
+                android:background="#ff8c8c8c"
+                android:longClickable="false"
+                android:typeface="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textScaleX="0.7"
+                android:id="@+id/editText"
+                android:imeOptions="flagNoExtractUi"
+                android:numeric="decimal"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                android:maxHeight="17dp" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:id="@+id/imageButton"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_action_overflow"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/button_background_selector"/>
+
+    <CheckBox
+    android:button="@drawable/checkbox"
+    android:layout_width="fill_parent"
+    android:layout_height="61.44dp"
+    android:id="@+id/communalCheckBox"
+    android:text="@string/communal"
+    android:enabled="true"
+    android:checked="true"
+    android:clickable="true"
+    android:background="@drawable/gradient"
+    android:drawablePadding="-50dp"
+    android:paddingLeft="30dp"
+    android:layout_marginLeft="0dp"
+        android:layout_below="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/communalEmpty"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/communalCheckBox" />
+
+
+    <CheckBox
+        android:button="@drawable/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/coldWaterCheckBox"
+        android:text="@string/coldWater"
+        android:enabled="true"
+        android:checked="true"
+        android:clickable="true"
+        android:background="@drawable/gradient"
+        android:drawablePadding="-50dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/communalEmpty" />
+
+    <TextView
+        android:id="@+id/coldWaterEmpty"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/coldWaterCheckBox" />
+
+
+
+    <CheckBox
+        android:button="@drawable/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/wasteWaterCheckBox"
+        android:text="@string/wasteWater"
+        android:enabled="true"
+        android:checked="true"
+        android:clickable="true"
+        android:background="@drawable/gradient"
+        android:drawablePadding="-50dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/coldWaterEmpty" />
+
+    <TextView
+        android:id="@+id/wasteWaterEmpty"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/wasteWaterCheckBox" />
+
+    <CheckBox
+        android:button="@drawable/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/hotWaterCheckBox"
+        android:text="@string/hotWater"
+        android:enabled="true"
+        android:checked="true"
+        android:clickable="true"
+        android:background="@drawable/gradient"
+        android:drawablePadding="-50dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/wasteWaterEmpty" />
+
+    <TextView
+        android:id="@+id/hotWaterEmpty"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/hotWaterCheckBox" />
+
+    <CheckBox
+        android:button="@drawable/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/heatingCheckBox"
+        android:text="@string/heating"
+        android:enabled="true"
+        android:checked="true"
+        android:clickable="true"
+        android:background="@drawable/gradient"
+        android:drawablePadding="-50dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/hotWaterEmpty" />
+
+    <TextView
+        android:id="@+id/heatingEmpty"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/heatingCheckBox" />
+
+    <CheckBox
+        android:button="@drawable/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/electricityCheckBox"
+        android:text="@string/electricity"
+        android:enabled="true"
+        android:checked="true"
+        android:clickable="true"
+        android:background="@drawable/gradient"
+        android:drawablePadding="-50dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/heatingEmpty" />
+
+
+    <TextView
+        android:id="@+id/electricityEmpty"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/electricityCheckBox" />
+
+
+    <CheckBox
+        android:button="@drawable/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/phoneCheckBox"
+        android:text="@string/phone"
+        android:enabled="true"
+        android:checked="true"
+        android:clickable="true"
+        android:background="@drawable/gradient"
+        android:drawablePadding="-50dp"
+        android:paddingLeft="30dp"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/electricityEmpty" />
+    <TextView
+        android:id="@+id/phoneEmpty"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/phoneCheckBox" />
+
+    <TextView
+    android:id="@+id/sumEmpty"
+    android:layout_width="0dp"
+    android:layout_height="38dp"
+    android:layout_below="@+id/phoneEmpty"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/button"
+        android:layout_below="@+id/sumEmpty" />
+
+
+</RelativeLayout>
+</ScrollView>

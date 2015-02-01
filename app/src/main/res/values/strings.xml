@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kom</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="communal">РАХУНОК НА СПЛАТУ ЗА ЖИТЛОВО-КОМУНАЛЬНІ ТА ІНШІ ПОСЛУГИ</string>
+    <string name="coldWater">ЦЕНТРАЛІЗОВАНЕ ПОСТАЧАННЯ ХОЛОДНОЇ ВОДИ ТА ВОДОВІДВЕДЕННЯ</string>
+    <string name="wasteWater">ЦЕНТРАЛІЗОВАНЕ ВОДОВІДВЕДЕННЯ ГАРЯЧОЇ ВОДИ</string>
+    <string name="hotWater">РАХУНОК НА СПЛАТУ ЗА ЦЕНТРАЛІЗОВАНЕ ПОСТАЧАННЯ ГАРЯЧОЇ ВОДИ</string>
+    <string name="heating">РАХУНОК НА СПЛАТУ ЗА ЦЕНТРАЛІЗОВАНЕ ОПАЛЕННЯ</string>
+    <string name="electricity">КИЇВЕНЕРГО</string>
+    <string name="phone">РАХУНОК ЗА КОМУНІКАЦІЙНІ ПОСЛУГИ</string>
+
+    <string name="sum">Сума до сплати:</string>
+    <string name="total_sum">Всього до сплати:</string>
+    <string name="save">ЗБЕРЕГТИ</string>
+
+
+    <string name="current">поточні</string>
+    <string name="previous">попередні</string>
+    <string name="difference">різниця</string>
+    <string name="amount_m2">Обсяг,м2</string>
+    <string name="amount_m3">Обсяг,м3</string>
+    <string name="rate">Тариф</string>
+    <string name="calculated">Нараховано</string>
+    <string name="recalculated">Перерах-к</string>
+    <string name="subsidy">Субсидія</string>
+    <string name="compensation">Компенсація</string>
+    <string name="total">До сплати:</string>
+    <string name="data">Показання лічильників, м3</string>
+
+
+    <string name="communal_calc">Стаття нарахувань</string>
+    <string name="house">Утримання будинків та прибуд. територій</string>
+    <string name="gas">Газ</string>
+
+    <string name="e_consumed">Спожито</string>
+    <string name="e_subsidy">Пільгові,кВтг</string>
+    <string name="e_below250">до 150/250 кВтг</string>
+    <string name="e_below800">від 150/250 до 800 кВтг</string>
+    <string name="e_over800">понад 800 кВтг</string>
+    <string name="e_rate_subsidy">Пільговий тариф</string>
+    <string name="e_rate_below250">Тариф до 150/250 кВтг</string>
+    <string name="e_rate_below800">Тариф від 150/250 до 800 кВтг</string>
+    <string name="e_rate_over800">Тариф понад 800 кВтг</string>
+
+    <string name="phone_rate">Абонплата за ТП</string>
+    <string name="radio_rate">Абонплата за користування радіоточкою</string>
+</resources>
